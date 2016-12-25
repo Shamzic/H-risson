@@ -1,29 +1,34 @@
 # H-risson
-Projet tour par tour
+
+Jeu tour par tour réalisé en C++
 
 # Objectifs première phase
 
-Réaliser un jeu tour par tour en terminal.
+Réalisation d'un jeu tour par tour en terminal.
 
-1 contre 1.
+- 1 joueur vs 1 joueur
 
-2 sorts par personnage : une attaque basique et une attaque spéciale.
+- 1 sort d'attaque par personnage
 
-Simple arène de jeu.
+- zone de jeu (grille)
 
-Menu à choix.
+- menu à choix
 
 # Objectifs deuxième phase
 
-Ajouter de la 3D isométrique.
+Passage du jeu sur une librairie graphique
 
-Augmenter le nombre de sorts.
+- Ajout 3D isométrique
+
+- Ajout de nouveaux sorts
+
+- Ajout de décors
 
 # Objectifs troisème phase 
 
-Ajout d'objets.
+- Ajout d'objets
 
-Rajouter le nombre de joueurs par combat.
+- Ajout de joueurs 
 
 
 

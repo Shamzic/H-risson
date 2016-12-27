@@ -10,7 +10,7 @@ Réalisation d'un jeu tour par tour en terminal.
 
 - classe grille (hauteur, largeur)
 
-- menu à choix (Combat, Classe, Boutique, Quitter) 
+- menu simple (Jouer, Quitter)
 
 # Objectifs deuxième phase
 
@@ -28,9 +28,11 @@ Passage du jeu sur une librairie graphique
 
 - Ajout de joueurs 
 
+- menu à choix (Combat, Classe, Boutique, Quitter) 
+
 # IDEES de Simon
 
-Le menu permet de choisir plusieurs onglets (cf première phase).
+Le menu permet de choisir plusieurs onglets (cf troisième phase).
 
 - L'onglet de Combat enclenche un combat en arêne. Une victoire rapporte des points qui peuvent être échangés dans l'onglet boutique.
 - L'onglet de Classe permet de choisir la classe du personnage. Les classes peuvent être débloquées après un certains nombre de victoires.

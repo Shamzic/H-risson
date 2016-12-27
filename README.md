@@ -6,13 +6,11 @@ Jeu tour par tour réalisé en C++
 
 Réalisation d'un jeu tour par tour en terminal.
 
-- 1 joueur vs 1 joueur
+- classe personnage (sort d'attaque, déplacement du personnage)
 
-- 1 sort d'attaque par personnage
+- classe grille (hauteur, largeur)
 
-- zone de jeu (grille)
-
-- menu à choix
+- menu à choix (Combat, Classe, Boutique, Quitter) 
 
 # Objectifs deuxième phase
 
@@ -30,5 +28,12 @@ Passage du jeu sur une librairie graphique
 
 - Ajout de joueurs 
 
+# IDEES de Simon
 
+Le menu permet de choisir plusieurs onglets (cf première phase).
+
+- L'onglet de Combat enclenche un combat en arêne. Une victoire rapporte des points qui peuvent être échangés dans l'onglet boutique.
+- L'onglet de Classe permet de choisir la classe du personnage. Les classes peuvent être débloquées après un certains nombre de victoires.
+- L'onglet de Boutique permet d'acheter de nouveaux objets.
+- L'onglet Quitter ferme la fenêtre du jeu.
 

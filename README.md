@@ -2,7 +2,7 @@
 
 Jeu tour par tour réalisé en C++
 
-# Compilation
+# Compilation
 
 g++ main.cpp Personnage.cpp -Wall -g -Werror
 

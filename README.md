@@ -2,6 +2,10 @@
 
 Jeu tour par tour réalisé en C++
 
+# Compilation
+
+g++ main.cpp Personnage.cpp -Wall -g -Werror
+
 # Objectifs première phase
 
 Réalisation d'un jeu tour par tour en terminal.

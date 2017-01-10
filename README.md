@@ -1,24 +1,24 @@
-# H-risson
+# RPG game / turn by turn
 
-Jeu tour par tour réalisé en C++
+Game realised in C++
 
 # Compilation
 
 g++ main.cpp Personnage.cpp -Wall -g -Werror
 
-# Objectifs première phase
+# Fist phase
 
-Réalisation d'un jeu tour par tour en terminal.
+Turn by turn game in the terminal.
 
-- classe personnage (sort d'attaque, déplacement du personnage)
+- class personnage (sort d'attaque, déplacement du personnage)
 
 - classe grille (hauteur, largeur)
 
 - menu simple (Jouer, Quitter)
 
-# Objectifs deuxième phase
+# Second phase
 
-Passage du jeu sur une librairie graphique
+Graphic librairie 
 
 - Ajout 3D isométrique
 
@@ -26,7 +26,7 @@ Passage du jeu sur une librairie graphique
 
 - Ajout de décors
 
-# Objectifs troisème phase 
+# Third phase
 
 - Ajout d'objets
 
@@ -34,9 +34,9 @@ Passage du jeu sur une librairie graphique
 
 - menu à choix (Combat, Classe, Boutique, Quitter) 
 
-# IDEES de Simon
+# Ideas
 
-Le menu permet de choisir plusieurs onglets (cf troisième phase).
+In the menu we can have different choices.
 
 - L'onglet de Combat enclenche un combat en arêne. Une victoire rapporte des points qui peuvent être échangés dans l'onglet boutique.
 - L'onglet de Classe permet de choisir la classe du personnage. Les classes peuvent être débloquées après un certains nombre de victoires.

@@ -1,7 +1,39 @@
-#include <string>
-#include "Personnage.h"
+	#include <string>
+	#include "Personnage.h"
 
-using namespace std;
+	using namespace std;
+	
+	// Constructeurs
+	
+	Personnage::Personnage() : m_vie(100),m_mana(100),
+	m_nomArme("Epée rouillée"),m_degatsArme(10)
+	{
+		//Rien à mettre ici tout est ok
+	}
+	
+/* // Equivalent à ..
+ * 
+	Personnage::Personnage()
+	{
+		m_vie = 100;
+		m_mana = 100;
+		m_nomArme = "Epée rouillée";
+		m_degatsArme = 10;		
+	}
+*/	
+	Personnage::Personnage(string nomArme,int degatsArme) : m_vie(100),
+	m_mana(100),m_nomArme(nomArme),m_degatsArme(degatsArme)
+	{}
+	
+	Personnage::Personnage(int vie, int mana, string nomArme, int degatsArme) : m_vie(vie),
+	m_mana(mana),m_nomArme(nomArme),m_degatsArme(degatsArme)
+	{}
+	
+	// Destructeur
+	Personnage::~Personnage()
+	{
+		// Rien à mettre car pas d'alloc dynamique
+	}
 	
 	void Personnage::recevoirDegats(int nbDegats)
 	{

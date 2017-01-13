@@ -5,7 +5,7 @@ using namespace std;
 
 int main (){
 	
-	Personnage david, goliath;
+	Personnage david, goliath("Epée aiguisée",20);
 	
 	goliath.attaquer(david);
 	david.boirePotionDeVie(20);

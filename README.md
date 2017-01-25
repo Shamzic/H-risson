@@ -4,7 +4,7 @@ Game realised in C++
 
 # Compilation
 
-g++ main.cpp Personnage.cpp -Wall -g -Werror
+g++ main.cpp Personnage.cpp -o main -Wall -g -Werror
 
 # Fist phase
 

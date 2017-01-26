@@ -6,7 +6,7 @@
 	// Constructeurs
 	
 	Personnage::Personnage() : m_vie(100),m_mana(100),
-	m_nomArme("Epée rouillée"),m_degatsArme(10)
+	m_Arme("Epée rouillée",10)
 	{
 		//Rien à mettre ici tout est ok
 	}
@@ -22,11 +22,11 @@
 	}
 */	
 	Personnage::Personnage(string nomArme,int degatsArme) : m_vie(100),
-	m_mana(100),m_nomArme(nomArme),m_degatsArme(degatsArme)
+	m_mana(100),m_arme(nomArme,degatsArme)
 	{}
 	
 	Personnage::Personnage(int vie, int mana, string nomArme, int degatsArme) : m_vie(vie),
-	m_mana(mana),m_nomArme(nomArme),m_degatsArme(degatsArme)
+	m_mana(mana),m_arme(nomArme,degatsArme)
 	{}
 	
 	// Destructeur
@@ -47,7 +47,7 @@
 	
 	void Personnage::attaquer(Personnage &cible)
 	{
-		cible.recevoirDegats(m_degatsArme); // inflige dégats à la cible en fonction des dégats de l'arme 
+		cible.recevoirDegats(m_arme.getDegats()); // inflige dégats à la cible en fonction des dégats de l'arme 
 											// Prochainement : dégats en fonction des sorts
 	}
 	
@@ -68,7 +68,7 @@
 		
 	}
 	
-	bool Personnage::estVivant()
+	bool Personnage::estVivant() const
 	{
 		if(m_vie>0)
 			return true;

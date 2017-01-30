@@ -20,7 +20,7 @@
 
 void Arme::afficher() const
 {
-	cout<<"Arme : "<<m_nom<<endl<<"Dégats : "<<m_degats<<endl;
+	cout<<"Arme : "<<m_nom <<" (Dégats : "<<m_degats<<")"<<endl;
 	
 }
 

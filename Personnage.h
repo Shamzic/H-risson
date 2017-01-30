@@ -13,10 +13,10 @@ class Personnage {
 	Personnage(); 
 	// Constructeur 1
 	
-	Personnage(std::string nomArme, int degatsArme); 
+	Personnage(std::string nom,std::string nomArme, int degatsArme); 
 	// Constructeur 2
 	
-	Personnage(int vie, int mana, std::string nomArme, int degatsArme); 
+	Personnage(std::string nom,int vie, int mana, std::string nomArme, int degatsArme); 
 	// Constructeur 3
 	
 	~Personnage(); // Destructeur
@@ -26,11 +26,15 @@ class Personnage {
 	void boirePotionDeVie(int quantitePotion);
 	void changerArme(std::string nomNouvelleArme,int degatsNouvelleArme);
 	bool estVivant() const;
+	void afficherEtat() const;
+	std::string getNom() const;
+	
 
 	// attributs
 	private:
 	int m_vie;
 	int m_mana;
+	std::string m_nom;
 	// On va remplacer ces attributs par une classe Arme
 	/* 
 	std::string m_nomArme; 
